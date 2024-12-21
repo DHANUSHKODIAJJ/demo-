@@ -1,0 +1,100 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container1{
+    background-color: blueviolet;
+    padding: 7rem;
+}
+.container1 h1{
+    color: white;
+}
+.scroolbar{
+    position: relative;
+    margin: 0 auto;
+    
+    display: flex;
+    overflow-x:scroll;
+    padding: 1rem;
+    max-width: 80%;
+    scroll-snap-type:proximity;
+    scroll-behavior:smooth;
+    gap: 1rem;
+}
+.scroolbar::-webkit-scrollbar{
+    width: 0px;
+}
+.card-tech{
+   min-width: 376px;
+    height: 448px;
+    background-color: blue;
+
+}
+.card-tech img{
+   
+    height: inherit;
+    max-width: 100%;
+}
+.section{
+    display: flex;
+    align-items: center; 
+
+}
+.left {
+    
+    background-color: gray;
+    border-radius: 2rem;
+    margin-left: 5%;
+    position: absolute;
+    
+    
+}
+.left img {
+    margin-left: 15%;
+}
+.right{
+    
+    background-color: gray;
+    border-radius: 2rem;
+    position: absolute;
+    margin-left: 91%;
+}
+
+
+
+
+@media only screen and (max-width: 576px) {
+    body{
+        background-color: black;
+        color :aliceblue;
+    }
+    .container1{
+       
+        padding: 2rem;
+    }
+    .scroolbar{
+        max-width: 100%;
+        background-image: url('./Asset/samplebg.jpg');
+        background-size: cover;
+        background-position: ;
+        
+    }
+    .card-tech{
+        min-width: 250px;
+         height: 299px;
+         border-radius: 1rem;
+         
+     
+     }
+     .card-tech img{
+        border-radius: 1rem;
+     }
+     .left{
+        display: none;
+     }
+     .right{
+        display: none;
+     }
+}
